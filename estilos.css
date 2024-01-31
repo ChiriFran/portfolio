@@ -54,7 +54,7 @@ header{
     color: var(--colorTittle);
 }
 
-#profileLogo h2{
+#profileLogo h1{
     font-size: 1.5rem;
     letter-spacing: 1px;
     margin: 0.5rem 0;
@@ -407,7 +407,7 @@ border-right: 2px solid var(--colorText);
     letter-spacing: 2px;
     font-weight: 800;
     text-align: start;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
     color: var(--colorTittle);
 }
 
@@ -680,11 +680,11 @@ border-right: 2px solid var(--colorText);
     }
 
     #intro h2{
-         font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #intro h3{
-         font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .iconscContact ul li img{
@@ -781,7 +781,7 @@ border-right: 2px solid var(--colorText);
     }
 
     #acerca h3{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     #modalAcerca h3{
