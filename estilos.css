@@ -563,7 +563,7 @@ border-right: 2px solid var(--colorText);
 }
 
 .card:hover{
-    background-color:var(--colorText);
+    background-color:var(--color);
     transition: .3s;
 }
 
@@ -583,7 +583,7 @@ border-right: 2px solid var(--colorText);
 }
 
 .card a:hover{
-    color: var(--colorText);
+    color: var(--colorba);
     transition: .3s;
 }
 
