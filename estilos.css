@@ -536,6 +536,7 @@ border-right: 2px solid var(--colorText);
     text-align: center;
     color: var(--colorTittle);
     margin: 0.4rem 0;
+    text-align: center;
 }
 
 .proyectsCards{
