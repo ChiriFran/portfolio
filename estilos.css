@@ -527,7 +527,7 @@ border-right: 2px solid var(--colorText);
     font-weight: 800;
     text-align: start;
     margin: 0.8rem 0;
-    margin-left: 2rem;
+    margin-left: 10rem;
     color: var(--colorTittle);
 }
 
@@ -957,7 +957,7 @@ border-right: 2px solid var(--colorText);
     
     .proyectsCards{
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
     
     .card{
@@ -1006,3 +1006,13 @@ border-right: 2px solid var(--colorText);
         display: none;
     }
 }
+
+
+@media screen and (min-width: 1501px ) and (max-width: 1850px ) {
+    .proyectsCards{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+}
+
