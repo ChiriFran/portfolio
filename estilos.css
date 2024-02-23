@@ -515,8 +515,6 @@ border-right: 2px solid var(--colorText);
     margin-bottom: 2rem;
 }
 
-
-
 #proyectos{
     display: none;
     width: 120rem;
@@ -879,7 +877,6 @@ border-right: 2px solid var(--colorText);
 
         
     #proyectos{
-        display: none;
         width: 400px;
         margin: 0.2rem 0.2rem;
     }
