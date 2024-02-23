@@ -515,6 +515,79 @@ border-right: 2px solid var(--colorText);
     margin-bottom: 2rem;
 }
 
+
+
+#proyectos{
+    display: none;
+    width: 120rem;
+}
+
+#proyectos h2{
+    width: 100%;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-align: start;
+    margin: 0.8rem 0;
+    color: var(--colorTittle);
+}
+
+#proyectos h3{
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: var(--colorTittle);
+    margin: 0.4rem 0;
+}
+
+.proyectsCards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card{
+    width: 18rem;
+    height: 22rem;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    background-color: rgba(100, 100, 100, 0.3);
+    border: 1px solid var(--colorBase);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    transition: .3s;
+}
+
+.card:hover{
+    background-color: rgba(100, 100, 100, 0.6);
+    transition: .3s;
+}
+
+.card img{
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+    border-radius: 0.2rem;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--colorTittle);
+    margin: 1rem 0;
+    transition: .3s;
+}
+
+.card a:hover{
+    color: var(--colorText);
+    transition: .3s;
+}
+
 #contacto{
     display: none;
     width: 582px;
@@ -802,6 +875,47 @@ border-right: 2px solid var(--colorText);
         border-radius: 5px;
         background: var(--colorTittle);
         background-color: var(--colorTittle);
+    }
+
+        
+    #proyectos{
+        display: none;
+        width: 400px;
+        margin: 0.2rem 0.2rem;
+    }
+
+    #proyectos h2{
+        font-size: 1rem;
+    }
+
+    #proyectos h3{
+        font-size: 0.8rem;
+        margin: 0.2rem 0;
+    }
+
+    .proyectsCards{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .card{
+        width: 150px;
+        height: 250px;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .card:last-child{
+        display: none;
+    }
+
+    .card img{
+        background-size: cover;
+        width: 100%;
+        height: 65%;
     }
 
     #contacto{
