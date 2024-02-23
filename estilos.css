@@ -590,7 +590,7 @@ border-right: 2px solid var(--colorText);
 
 .card a:hover{
     color: var(--colorba);
-    border: 2px solid var(--colorTittle);
+    border: 1px solid var(--colorTittle);
     transition: .3s;
 }
 
