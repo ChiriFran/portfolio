@@ -525,7 +525,8 @@ border-right: 2px solid var(--colorText);
     font-size: 1.3rem;
     letter-spacing: 2px;
     font-weight: 800;
-    margin: 0.8rem 1rem;
+    text-align: center;
+    margin: 0.8rem 0;
     margin-left: 5rem;
     color: var(--colorTittle);
 }
