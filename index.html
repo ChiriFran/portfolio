@@ -1,251 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <section id="profileLogo">
-            <h1>Chiri Francisco</h1>
-            <h3>Desarrollador Web Front-End</h3>
-            <h4>Buenos Aires, Argentina</h4>
-            <h5><a href="tel" id="tel">+54-1130504515</a></h5>
+      <section id="profileLogo">
+        <h1>Chiri Francisco</h1>
+        <h3>Desarrollador Web Front-End</h3>
+        <h4>Buenos Aires, Argentina</h4>
+        <h5><a href="tel" id="tel">+54-1130504515</a></h5>
+      </section>
+      <section id="profileImg">
+        <img src="./img/profileImg2escalada.jpg" alt="Foto de perfil." />
+      </section>
+      <button class="abrirMenu" id="abrir"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button class="cerrarMenu" id="cerrar">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <ul class="navList">
+          <li><a id="inicioBtn" href="#">Inicio</a></li>
+          <li><a id="acercaBtn" href="#">Acerca</a></li>
+          <li><a id="proyectosBtn" href="#">Proyectos</a></li>
+          <li><a id="contactoBtn" href="#">Contacto</a></li>
+        </ul>
+        <section id="logoImg">
+          <img id="logo" src="./icons/logoBlanco.png" alt="Foto de perfil." />
         </section>
-        <section id="profileImg">
-            <img src="./img/profileImg2escalada.jpg" alt="Foto de perfil.">
-        </section>
-        <button class="abrirMenu" id="abrir"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrarMenu" id="cerrar"><i class="bi bi-x-lg"></i></button>
-            <ul class="navList">
-                <li><a id="inicioBtn" href="#">Inicio</a></li>
-                <li><a id="acercaBtn" href="#">Acerca</a></li>
-                <li><a id="proyectosBtn" href="#">Proyectos</a></li>
-                <li><a id="contactoBtn" href="#">Contacto</a></li>
-            </ul>
-            <section id="logoImg">
-                <img id="logo" src="./icons/logoBlanco.png" alt="Foto de perfil.">
-            </section>
-        </nav>
+      </nav>
     </header>
 
     <article>
-        <ul>
-            <li>
-                <div id="intro">
-                    <h2>Front-End Developer.</h2>
-                    <h3 id="articleText">Hola, soy Francisco Chiri y soy un nuevo apasionado en el mundo<br>del
-                        desarrollo Front-End de Buenos Aires, Argentina.</h3>
+      <ul>
+        <li>
+          <div id="intro">
+            <h2>Desarrollador Web React Js</h2>
+            <h3 id="articleText">
+              Hola, soy Francisco Chiri y soy un nuevo apasionado en el mundo<br />del
+              desarrollo web de Buenos Aires, Argentina.
+            </h3>
 
-                    <div class="iconscContact">
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/francisco-chiri-6a2883150?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_meidum=android_app" target="_blank">
-                                    <svg id="linkSvg" class="iconsHover" xmlns="http://www.w3.org/2000/svg" width="32"
-                                    height="32" fill="#f3f3f3" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
-                                </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <button id="botonAbrirModal">Visualizar curriculum</button>
-                                <dialog id="modal">
-                                    <button id="botonCerrarModal"><img src="./icons/close.svg" alt="Cerrar ventana emergente"></button>
-                                    <h2>Curriculum</h2>
-                                    <h3>Educacion</h3>
-                                    <p>Estudios primarios y secundarios con bachiller en Ciencias Sociales completos en Colegio Emaús. 2005/17.</p>
-                                    <P>Licenciatura en Abogacia. Universidad Nacional de la Matanza. 15/42 2017/20.</P>
-                                    <P>Tecnicatura en Diseño y Programacion de videojuegos. Universidad Nacional del Litoral. Facultad de Ingenieria y Ciencias Hídricas. 2022/23 .</P>
-                                    <P>Curso de Desarrollo Web Front-End. Universidad Nacional Raul Scalabrini Ortiz. 2022</P>
-                                    <h3>Conocimientos</h3>
-                                    <p>Desarrollo web Frontend: HTML, CSS y Javascript.</p>
-                                    <p>Conocimientos nivel avanzado de HTML y CSS con estandares de desarrollo web actuales.</p>
-                                    <p>+2 años de experiencia en creacion de paginas web.</p>
-                                    <p>Metodologia de desarrollo Mobile first, full responsive.</p>
-                                    <p>Conocimientos Programacion de videojuegos en C++ / C#</p>
-                                    <p>Proyectos realizados: Web personal, landing page, pagina de referidos, hoteleria, menu de restaurantes.</p>
-                                    <h3>Experiencia laboral</h3>
-                                    <p>Poder judicial de la Nacion. Subsecretaria de contrataciones y presupuestos. Secretario personal y encargado de labores administrativas. 2017/20.</p>
-                                    <p>Grupo de inversion en juegos de criptomonedas. Desarrollando tareas de seleccion y estudio de videojuegos. 2020/22.</p>
-                                    <h3>Competencias y actitudes.</h3>
-                                    <p>Planificacion y responsabilidad ante la resolucion de objetivos.</p>
-                                    <p>Manejo de la comunicación y comprensión.</p>
-                                    <p>Trabajo en equipo</p>
-                                    <p>Actitud positiva y profesional.</p>
-                                    <button id="botonCerrarModal2"><img src="./icons/close.svg" alt="Cerrar ventana emergente"></button>
-                                </dialog>
-                            </li>
-                            <li>
-                                <a href="./-CV-.pdf" download="CV-CHIRI-FRANCISCO" target="_blank"><img id="descargarCv" src="./icons/download.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="iconscContact">
+              <ul>
+                <li>
+                  <button id="botonAbrirModal">Visualizar curriculum</button>
+                  <dialog id="modal">
+                    <button id="botonCerrarModal">
+                      <img
+                        src="./icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                    <h2>Curriculum</h2>
+                    <h3>Educacion</h3>
+                    <p>
+                      Estudios primarios y secundarios con bachiller en Ciencias
+                      Sociales completos en Colegio Emaús. 2005/17.
+                    </p>
+                    <p>
+                      Licenciatura en Abogacia. Universidad Nacional de la
+                      Matanza. 15/42 2017/20.
+                    </p>
+                    <p>
+                      Tecnicatura en Diseño y Programacion de videojuegos.
+                      Universidad Nacional del Litoral. Facultad de Ingenieria y
+                      Ciencias Hídricas. 2022/23 .
+                    </p>
+                    <p>
+                      Curso de Desarrollo Web Front-End. Universidad Nacional
+                      Raul Scalabrini Ortiz. 2022
+                    </p>
+                    <p>
+                      Curso Desarrollo React Js. Universidad Tecnologica
+                      Nacional 22/2 - 24/5 2024.
+                    </p>
+                    <h3>Conocimientos</h3>
+                    <p>
+                      Desarrollo Fullstack con : React Js, Vite, Firebase
+                      services ( Metodologia BAAS ).
+                    </p>
+                    <p>Desarrollo web Frontend: HTML, CSS y Javascript.</p>
+                    <p>
+                      Conocimientos nivel avanzado de HTML y CSS con estandares
+                      de desarrollo web actuales.
+                    </p>
+                    <p>+3 años de experiencia en creacion de paginas web.</p>
+                    <p>
+                      Metodologia de desarrollo Mobile first, full responsive.
+                    </p>
+                    <p>Conocimientos Programacion de videojuegos en C++ / C#</p>
+                    <p>
+                      Proyectos realizados: Web personal, landing page, pagina
+                      de referidos, hoteleria, menu de restaurantes.
+                    </p>
+                    <h3>Experiencia laboral</h3>
+                    <p>
+                      Poder judicial de la Nacion. Subsecretaria de
+                      contrataciones y presupuestos. Secretario personal y
+                      encargado de labores administrativas. 2017/20.
+                    </p>
+                    <p>
+                      Grupo de inversion en juegos de criptomonedas.
+                      Desarrollando tareas de seleccion y estudio de
+                      videojuegos. 2020/22.
+                    </p>
+                    <h3>Competencias y actitudes.</h3>
+                    <p>
+                      Planificacion y responsabilidad ante la resolucion de
+                      objetivos.
+                    </p>
+                    <p>Manejo de la comunicación y comprensión.</p>
+                    <p>Trabajo en equipo</p>
+                    <p>Actitud positiva y profesional.</p>
+                    <button id="botonCerrarModal2">
+                      <img
+                        src="./icons/close.svg"
+                        alt="Cerrar ventana emergente"
+                      />
+                    </button>
+                  </dialog>
+                </li>
+                <li>
+                  <a
+                    href="./-CV-.pdf"
+                    download="CV-CHIRI-FRANCISCO"
+                    target="_blank"
+                    ><img id="descargarCv" src="./icons/download.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
 
-                    <div id="articleFooter">
-                        <ul>
-                            <li>
-                                <h3 id="articleFooterTittle">Tecnologias</h3>
-                            </li>
-                            <li>
-                                <svg id="htmlSvg" xmlns="http://www.w3.org/2000/svg" width="38" height="38"
-                                    fill="#f3f3f3" class="bi bi-filetype-html" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706m4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
-                                </svg>
-                            </li>
-                            <li>
-                                <!-- <img src="./icons/html.svg" alt="HTML" class="iconsHover"> -->
-                                <svg id="cssSvg" xmlns="http://www.w3.org/2000/svg" width="38" height="38"
-                                    fill="#f3f3f3" class="bi bi-filetype-css" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z" />
-                                </svg>
-                            </li>
-                            <li>
-                                <!-- <img src="./icons/css.svg" alt="CSS" class="iconsHover"> -->
-                                <svg id="jsSvg" xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#f3f3f3"
-                                    class="bi bi-filetype-js" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z" />
-                                </svg>
-                            </li>
-                            <li>
-                                <!-- <img src="./icons/js.svg" alt="Javascript" class="iconsHover"> -->
-                                <svg id="gitSvg" xmlns="http://www.w3.org/2000/svg" width="38" height="38"
-                                    fill="#f3f3f3" class="bi bi-git" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
-                                </svg>
-                            </li>
-                            <li>
-                                <!-- <img src="./icons/nodeJs.svg" alt="NodeJs" class="iconsHover"> -->
-                            </li>
-                            <!-- <li>
+            <div id="articleFooter">
+              <ul>
+                <li>
+                  <h3 id="articleFooterTittle">Tecnologias</h3>
+                </li>
+                <li>
+                  <svg
+                    id="htmlSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    fill="#f3f3f3"
+                    class="bi bi-filetype-html"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706m4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <!-- <img src="./icons/html.svg" alt="HTML" class="iconsHover"> -->
+                  <svg
+                    id="cssSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    fill="#f3f3f3"
+                    class="bi bi-filetype-css"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <!-- <img src="./icons/css.svg" alt="CSS" class="iconsHover"> -->
+                  <svg
+                    id="jsSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    fill="#f3f3f3"
+                    class="bi bi-filetype-js"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    id="reactSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    fill="#f3f3f3"
+                    class="bi bi-filetype-jsx"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.075 14.841a1.13 1.13 0 0 0 .401.823q.194.162.478.252.284.091.665.091.507 0 .858-.158.355-.158.54-.44a1.17 1.17 0 0 0 .187-.656q0-.336-.135-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.565-.21l-.621-.144a1 1 0 0 1-.405-.176.37.37 0 0 1-.143-.299q0-.234.184-.384.188-.152.513-.152.214 0 .37.068a.6.6 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.199-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.44 0-.776.15-.337.149-.528.421-.19.273-.19.639 0 .302.123.524t.351.367q.229.143.54.213l.618.144q.31.073.462.193a.39.39 0 0 1 .153.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.176 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM0 14.791q0 .247.082.466.083.22.243.39.165.17.407.267.246.093.569.093.63 0 .984-.346.357-.345.358-1.004v-2.725h-.791v2.745q0 .302-.138.466t-.422.164a.5.5 0 0 1-.454-.246.6.6 0 0 1-.073-.27zm8.907-2.859H9.8l-1.274 2.007L9.78 15.93h-.908l-.85-1.415h-.035l-.853 1.415h-.861l1.24-2.016-1.228-1.983h.931l.832 1.438h.036l.823-1.438Z"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <!-- <img src="./icons/js.svg" alt="Javascript" class="iconsHover"> -->
+                  <svg
+                    id="gitSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="38"
+                    fill="#f3f3f3"
+                    class="bi bi-git"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <!-- <img src="./icons/nodeJs.svg" alt="NodeJs" class="iconsHover"> -->
+                </li>
+                <!-- <li>
                                 <img src="./icons/git.svg" alt="Git" class="iconsHover">
                             </li> -->
-                        </ul>
-                    </div>
+              </ul>
+            </div>
+          </div>
+
+          <div id="acerca">
+            <h2>Mas sobre mi</h2>
+            <h3>
+              Soy programador Front-End y hace mas de tres años me dedico al
+              estudio de este extenso y complejo mundo del desarrollo web.
+            </h3>
+            <h3>
+              Realizo webs full responsive con HTML, CSS y Javascript con los
+              estandares de desarrollo indispensables en la actualidad.
+            </h3>
+            <div class="educacion">
+              <h2>Conocimientos</h2>
+              <h3>Desarrollo web Frontend: HTML, CSS y Javascript.</h3>
+              <h3>
+                Conocimientos nivel avanzado de HTML y CSS con estandares de
+                desarrollo web actuales.
+              </h3>
+              <h3>+2 años de experiencia en creacion de paginas web.</h3>
+              <h3>Metodologia de desarrollo Mobile first, full responsive.</h3>
+              <h3>Conocimientos Programacion de videojuegos en C++ / C#</h3>
+              <h3>
+                Proyectos realizados: Web personal, landing page, E-Commerce,
+                Paginas de referidos, Hoteleria, Menu de restaurantes.
+              </h3>
+            </div>
+            <button id="botonAbrirModalAcerca">+info</button>
+            <dialog id="modalAcerca">
+              <button id="botonCerrarModalAcerca">
+                <img src="./icons/close.svg" alt="Cerrar ventana emergente" />
+              </button>
+              <h3>Educacion</h3>
+              <p>
+                Estudios primarios y secundarios con bachiller en Ciencias
+                Sociales completos en Colegio Emaús. 2005/17.
+              </p>
+              <p>
+                Licenciatura en Abogacia. Universidad Nacional de la Matanza.
+                15/42 2017/20.
+              </p>
+              <p>
+                Tecnicatura en Diseño y Programacion de videojuegos. Universidad
+                Nacional del Litoral. Facultad de Ingenieria y Ciencias
+                Hídricas. 2022/23 .
+              </p>
+              <p>
+                Curso de Desarrollo Web Front-End. Universidad Nacional Raul
+                Scalabrini Ortiz. 2022
+              </p>
+              <h3>Experiencia laboral</h3>
+              <p>
+                Poder judicial de la Nacion. Subsecretaria de contrataciones y
+                presupuestos. Secretario personal y encargado de labores
+                administrativas. 2017/20.
+              </p>
+              <p>
+                Grupo de inversion en juegos de criptomonedas. Desarrollando
+                tareas de seleccion y estudio de videojuegos. 2020/22.
+              </p>
+              <h3>Competencias y actitudes.</h3>
+              <p>
+                Planificacion y responsabilidad ante la resolucion de objetivos.
+              </p>
+              <p>Buen manejo de la comunicación y comprensión.</p>
+              <p>Trabajo en equipo</p>
+              <p>Actitud positiva y profesional.</p>
+            </dialog>
+          </div>
+
+          <div id="proyectos">
+            <h2>Proyectos realizados:</h2>
+            <div class="proyectsCards">
+              <div class="card">
+                <h3>Coding Solutions-Landing Page</h3>
+                <a href="https://chirifran.github.io/CodingSolutions/" target="_blank"
+                  >Visitar</a
+                >
+                <img src="./img/cards//gentleman.png" alt="" />
+              </div>
+            <div class="proyectsCards">
+              <div class="card">
+                <h3>Gentleman Barbershop-Landin Page</h3>
+                <a href="https://chirifran.github.io/barberia/" target="_blank"
+                  >Visitar</a
+                >
+                <img src="./img/cards//gentleman.png" alt="" />
+              </div>
+
+              <div class="card">
+                <h3>Carla Deco.-Ecommerce</h3>
+                <a
+                  href="https://chirifran.github.io/CarlaDeco./index.html"
+                  target="_blank"
+                  >Visitar</a
+                >
+                <img src="./img/cards/carlaDeco.png" alt="" />
+              </div>
+              <div class="card">
+                <h3>dielectronicsarg-Ecommerce</h3>
+                <a
+                  href="https://chirifran.github.io/dielectronics.arg/index.html"
+                  target="_blank"
+                  >Visitar</a
+                >
+                <img src="./img/cards/dielectronicsarg.png" alt="" />
+              </div>
+              <div class="card">
+                <h3>Luken Referidos-Referidos</h3>
+                <a
+                  href="https://chirifran.github.io/LukenReferidos/"
+                  target="_blank"
+                  >Visitar</a
+                >
+                <img src="./img/cards/lukenReferidosMobile.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="contacto">
+            <div class="contactForm">
+              <form
+                action="https://formsubmit.co/franchiri00@gmail.com"
+                method="POST"
+                id="form"
+              >
+                <h2>Contacto</h2>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    name="Nombre"
+                    required="required"
+                    autocomplete="off"
+                  />
+                  <span>Nombre completo</span>
                 </div>
-
-                <div id="acerca">
-                    <h2>Mas sobre mi</h2>
-                    <h3>Soy programador Front-End y hace mas de dos años me dedico al estudio de este extenso y complejo
-                        mundo del desarrollo web.</h3>
-                    <h3>Realizo webs full responsive con HTML, CSS y Javascript con los estandares de desarrollo
-                        indispensables en la actualidad.</h3>
-                    <div class="educacion">
-                        <h2>Conocimientos</h2>
-                        <h3>Desarrollo web Frontend: HTML, CSS y Javascript.</h3>
-                        <h3>Conocimientos nivel avanzado de HTML y CSS con estandares de desarrollo web actuales.</h3>
-                        <h3>+2 años de experiencia en creacion de paginas web.</h3>
-                        <h3>Metodologia de desarrollo Mobile first, full responsive.</h3>
-                        <h3>Conocimientos Programacion de videojuegos en C++ / C#</h3>
-                        <h3>Proyectos realizados: Web personal, landing page, E-Commerce, Paginas de referidos, Hoteleria, Menu de restaurantes.</h3>
-                    </div>
-                    <button id="botonAbrirModalAcerca">+info</button>
-                    <dialog id="modalAcerca">
-                        <button id="botonCerrarModalAcerca"><img src="./icons/close.svg" alt="Cerrar ventana emergente"></button>
-                        <h3>Educacion</h3>
-                        <p>Estudios primarios y secundarios con bachiller en Ciencias Sociales completos en Colegio Emaús. 2005/17.</p>
-                        <P>Licenciatura en Abogacia. Universidad Nacional de la Matanza. 15/42 2017/20.</P>
-                        <P>Tecnicatura en Diseño y Programacion de videojuegos. Universidad Nacional del Litoral. Facultad de Ingenieria y Ciencias Hídricas. 2022/23 .</P>
-                        <P>Curso de Desarrollo Web Front-End. Universidad Nacional Raul Scalabrini Ortiz. 2022</P>
-                        <h3>Experiencia laboral</h3>
-                        <p>Poder judicial de la Nacion. Subsecretaria de contrataciones y presupuestos. Secretario personal y encargado de labores administrativas. 2017/20.</p>
-                        <p>Grupo de inversion en juegos de criptomonedas. Desarrollando tareas de seleccion y estudio de videojuegos. 2020/22.</p>
-                        <h3>Competencias y actitudes.</h3>
-                        <p>Planificacion y responsabilidad ante la resolucion de objetivos.</p>
-                        <p>Buen manejo de la comunicación y comprensión.</p>
-                        <p>Trabajo en equipo</p>
-                        <p>Actitud positiva y profesional.</p>
-                    </dialog>
+                <div class="inputBox">
+                  <input
+                    type="email"
+                    name="Email"
+                    required="required"
+                    autocomplete="off"
+                  />
+                  <span>Email</span>
                 </div>
-
-                <div id="proyectos">
-                    <h2>Proyectos realizados: </h2>
-                    <div class="proyectsCards">
-                        <div class="card">
-                            <h3>Gentleman Barbershop</h3>
-                            <a href="https://chirifran.github.io/barberia/" target="_blank">Visitar</a>
-                            <img src="./img/cards//gentleman.png" alt="">
-                        </div>
-                        <div class="card">
-                            <h3>Home-Ecommerce</h3>
-                            <a href="https://chirifran.github.io/Home-Ecommerce/" target="_blank">Visitar</a>
-                            <img src="./img/cards/ecommerce.png" alt="">
-                        </div>
-
-                        <div class="card">
-                            <h3>Windingo Referidos</h3>
-                            <a href="https://chirifran.github.io/WindingoReferidos/" target="_blank">Visitar</a>
-                            <img src="./img/cards/forg1ReferidosTablet.png" alt="">
-                        </div>
-                        <div class="card">
-                            <h3>Luken Referidos</h3>
-                            <a href="https://chirifran.github.io/LukenReferidos/" target="_blank">Visitar</a>
-                            <img src="./img/cards/lukenReferidosMobile.png" alt="">
-                        </div>
-                        <div class="card">
-                            <h3>Sol Ortega Referidos</h3>
-                            <a href="https://chirifran.github.io/SolOrtegaReferidos/" target="_blank">Visitar</a>
-                            <img src="./img/cards/sol.png" alt="">
-                        </div>
-                    </div>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    name="Mensaje"
+                    required="required"
+                    autocomplete="off"
+                  />
+                  <span>Ingresa el mensaje...</span>
                 </div>
-
-                <div id="contacto">
-                    <div class="contactForm">
-                        <form action="https://formsubmit.co/franchiri00@gmail.com" method="POST" id="form">
-                            <h2>Contacto</h2>
-                            <div class="inputBox">
-                                <input type="text" name="Nombre" required="required" autocomplete="off">
-                                <span>Nombre completo</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="email" name="Email" required="required" autocomplete="off">
-                                <span>Email</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="Mensaje" required="required" autocomplete="off">
-                                <span>Ingresa el mensaje...</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="submit" value="Enviar" id="bntEnviar">
-                            </div>
-                        </form>
-                    </div>
+                <div class="inputBox">
+                  <input type="submit" value="Enviar" id="bntEnviar" />
                 </div>
-
-
-            </li>
-        </ul>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
     </article>
 
     <section id="darkMode">
-        <div class="darkIconContainer" id="iconBtn">
-            <img src="./icons/sun.svg" alt="" id="darkModeImg" class="iconsHover">
-        </div>
+      <div class="darkIconContainer" id="iconBtn">
+        <img src="./icons/sun.svg" alt="" id="darkModeImg" class="iconsHover" />
+      </div>
     </section>
 
     <script src="./scripts/popUp.js"></script>
     <script src="./scripts/nav.js"></script>
     <script src="./scripts/cards.js"></script>
     <script src="./scripts/darkMode.js"></script>
-</body>
-
+  </body>
 </html>

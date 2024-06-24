@@ -278,14 +278,6 @@ li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
     margin-left: 1rem;
 } */
 
-.iconsHover{
-    transition: .5s;
-}
-
-.iconsHover:hover{
-    transform: translateY(-3px);
-    transition: .6s;
-}
 
 #modal{
     width: 100%;
@@ -330,12 +322,6 @@ li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
     background: var(--colorBase);
     background-color: var(--colorTittle);
     cursor: pointer;
-    transition: .5s;
-}
-
-#botonAbrirModal:hover{
-    transform: translateY(-3px);
-    transition: .6s;
 }
 
 #botonCerrarModal{
@@ -403,7 +389,7 @@ border-right: 2px solid var(--colorText);
 
 #acerca h2{
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: 800;
     text-align: start;
@@ -450,14 +436,14 @@ border-right: 2px solid var(--colorText);
 }
 
 #modalAcerca h3{
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #fff;
     text-align: center;
     margin-top: 3rem;
 }
 
 #modalAcerca p{
-    font-size: 1rem ;
+    font-size: 0.8rem ;
     color: #fff;
     padding: 0.3rem 1rem;
     text-align: center  ;
@@ -522,7 +508,7 @@ border-right: 2px solid var(--colorText);
 
 #proyectos h2{
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 800;
     text-align: center;
@@ -608,7 +594,7 @@ border-right: 2px solid var(--colorText);
 }
 
 .contactForm h2{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--colorTittle);
     font-weight: 500;
     margin: 1rem 0;

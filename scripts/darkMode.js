@@ -13,6 +13,7 @@ const articleFooterTittle = document.getElementById('articleFooterTittle');
 const htmlSvg = document.getElementById('htmlSvg');
 const cssSvg = document.getElementById('cssSvg');
 const jsSvg = document.getElementById('jsSvg');
+const reactSvg = document.getElementById('reactSvg');
 const gitSvg = document.getElementById('gitSvg');
 
 const logoNav = document.getElementById('logo');
@@ -33,6 +34,7 @@ btnDarkMode.onclick = function() {
         htmlSvg.style.fill = "#2b2b2b";
         cssSvg.style.fill = "#2b2b2b";
         jsSvg.style.fill = "#2b2b2b";
+        reactSvg.style.fill = "#2b2b2b";
         gitSvg.style.fill = "#2b2b2b";
 
     }else{
@@ -47,6 +49,7 @@ btnDarkMode.onclick = function() {
         htmlSvg.style.fill = "#f3f3f3";
         cssSvg.style.fill = "#f3f3f3";
         jsSvg.style.fill = "#f3f3f3";
+        reactSvg.style.fill = "#f3f3f3";
         gitSvg.style.fill = "#f3f3f3";
     }
 }
